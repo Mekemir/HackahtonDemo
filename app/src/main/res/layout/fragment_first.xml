@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.example.hackahtondemo.fragments.entrypage.EntryViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_back"
+        tools:context=".fragments.entrypage.EntryFragment">
+
+        <TextView
+            android:id="@+id/textview_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_first_fragment"
+            android:textSize="20dp"
+            android:textColor="#283593"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/button_first"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_rounded"
+            android:gravity="center"
+            android:textColor="#283593"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/next"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</layout>
